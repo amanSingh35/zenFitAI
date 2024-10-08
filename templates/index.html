@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker App</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .cards-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Fitness App</h1>
+        <p>This app helps you track your workouts!</p>
+    </header>
+    <div class="cards-container">
+        <div class="card" onclick="window.location.href='/pushup'">
+            <h2>Push-Ups</h2>
+            <p>Track your push-up reps!</p>
+        </div>
+        <div class="card" onclick="window.location.href='/situp'">
+            <h2>Sit-Ups</h2>
+            <p>Track your sit-up reps!</p>
+        </div>
+        <div class="card" onclick="window.location.href='/curl'">
+            <h2>Curls</h2>
+            <p>Track your curl reps!</p>
+        </div>
+    </div>
+</body>
+</html>

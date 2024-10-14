@@ -2,6 +2,7 @@ from flask import Flask, render_template, Response
 import cv2
 import mediapipe as mp
 import numpy as np
+import os  # Import os to access environment variables
 
 app = Flask(__name__)
 
@@ -304,4 +305,6 @@ def situp():
     return Response(situp_exercise(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Get the port from the environment variable and bind to 0.0.0.0
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)

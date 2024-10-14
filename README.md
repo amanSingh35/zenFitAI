@@ -33,3 +33,6 @@ To run this project, ensure you have Python 3.x installed. Follow these steps to
    ```bash
    git clone https://github.com/USERNAME/REPOSITORY.git
    cd REPOSITORY
+## Images
+![Screenshot (134)](https://github.com/user-attachments/assets/9d8af723-fac5-4fce-b01a-4622d093c497)
+![Screenshot (133)](https://github.com/user-attachments/assets/572190d9-b9ff-4447-9579-59cdf3cd67d8)
